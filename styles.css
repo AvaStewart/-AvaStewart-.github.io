@@ -1,0 +1,191 @@
+/* styles.css - To be filled out to match Figma design exactly */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing: border-box;
+  background: 
+    url('images/Screenshot 2025-12-02 at 10.49.23 AM.png') center center/cover no-repeat,
+    url('images/Screenshot 2025-12-02 at 10.20.14 AM.png') center center/cover no-repeat;
+  background-blend-mode: lighten, normal;
+  /* You can adjust background-blend-mode or add rgba overlays as needed */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(18, 37, 63, 0.03);
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d53da;
+  margin: 0;
+  display: inline-block;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  color: #3a3d65;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.09rem;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #2d53da;
+}
+
+.hero {
+  background: linear-gradient(90deg, #dde7fa 0%, #f5f7fa 100%);
+  padding: 70px 0 50px 0;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.hero-content > div {
+  flex: 1 1 350px;
+}
+.hero-content h2 {
+  font-size: 2.7rem;
+  color: #182848;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+.subtitle {
+  color: #3a3d65;
+  font-size: 1.24rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.cta-button {
+  background: #2d53da;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 7px;
+  font-size: 1.07rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(45, 83, 218, .07);
+  transition: background 0.2s;
+  display: inline-block;
+}
+.cta-button:hover {
+  background: #1b357a;
+}
+.hero-img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 6px 34px rgba(45, 83, 218, .09);
+  flex: 1 1 350px;
+}
+.features {
+  padding: 70px 0 20px 0;
+  background: #fff;
+}
+.features h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #2d53da;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+.feature {
+  background: #f5f7fa;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px rgba(18, 37, 63, 0.04);
+  padding: 33px 26px;
+  text-align: center;
+  width: 300px;
+  max-width: 90vw;
+}
+.feature img {
+  max-width: 95%;
+  max-height: 160px;
+  border-radius: 12px;
+  margin-bottom: 19px;
+  box-shadow: 0 2px 18px rgba(45, 83, 218, .08);
+}
+.feature h4 {
+  font-size: 1.24rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #182848;
+}
+.feature p {
+  color: #3a3d65;
+  font-size: 1rem;
+  line-height: 1.44;
+}
+.cta-section {
+  background: linear-gradient(90deg, #99b6ff 0%, #e6edff 100%);
+  text-align: center;
+  padding: 54px 0 54px 0;
+}
+.cta-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #182848;
+  margin-bottom: 23px;
+}
+.footer {
+  background: #222e49;
+  color: #f5f7fa;
+  padding: 26px 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0;
+  border-radius: 0 0 20px 20px;
+}
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .features-list {
+    flex-direction: column;
+    gap: 27px;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .features h3, .cta-section h3 {
+    font-size: 1.2rem;
+  }
+}
